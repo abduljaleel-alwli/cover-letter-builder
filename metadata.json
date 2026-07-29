@@ -1,0 +1,6 @@
+{
+  "name": "Cover Letter Builder",
+  "description": "Professional cover letter template and builder for Biomedical Engineering and Technical roles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

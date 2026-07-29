@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-signature-vibes {
+    font-family: 'Great Vibes', cursive;
+  }
+  .font-signature-dancing {
+    font-family: 'Dancing Script', cursive;
+  }
+  .font-signature-sacramento {
+    font-family: 'Sacramento', cursive;
+  }
+  .font-signature-ruqaa {
+    font-family: 'Aref Ruqaa', serif;
+  }
+  .font-signature-katibeh {
+    font-family: 'Katibeh', cursive, serif;
+  }
+  .font-signature-gulzar {
+    font-family: 'Gulzar', cursive, serif;
+  }
+  .font-signature-reem-ink {
+    font-family: 'Reem Kufi Ink', cursive, sans-serif;
+  }
+  .font-signature-lateef {
+    font-family: 'Lateef', cursive;
+  }
+  .font-signature-marhey {
+    font-family: 'Marhey', cursive;
+  }
+  .font-signature-amiri-italic {
+    font-family: 'Amiri', serif;
+    font-style: italic;
+  }
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  html, body {
+    width: 210mm !important;
+    height: 297mm !important;
+    max-height: 297mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    overflow: hidden !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide all UI elements marked with .no-print */
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+
+  /* Reset application container elements for printing */
+  #root, main, main > div {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 210mm !important;
+    height: 297mm !important;
+    max-height: 297mm !important;
+    overflow: hidden !important;
+    background: white !important;
+    border: none !important;
+    box-shadow: none !important;
+    display: block !important;
+  }
+
+  /* Document page container formatting */
+  .print-page,
+  #cover-letter-document {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 210mm !important;
+    height: 297mm !important;
+    max-height: 297mm !important;
+    max-width: 210mm !important;
+    margin: 0 auto !important;
+    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    background: white !important;
+    visibility: visible !important;
+    display: block !important;
+    page-break-after: avoid !important;
+    page-break-before: avoid !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Keep all child elements inside the document visible and correctly styled */
+  #cover-letter-document * {
+    visibility: visible !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
